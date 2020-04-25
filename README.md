@@ -13,19 +13,21 @@ A Google Chrome Extension for controlling HTML5 audio/video playback rate.
 
 ## Instalando
 
-## Opção 1 (extensão desempacotada)
+Como essa extensão não é publicada na Chrome Web Store, um conjunto de passos descritos abaixo sào necessários.
 
-- Download do fonte da extensão <https://github.com/mhagnumdw/Playback-Rate-Controller/archive/master.zip>
+## Opção 1 (extensão desempacotada, mais simples)
+
+- Download do fonte da extensão [clicando aqui](https://github.com/mhagnumdw/Playback-Rate-Controller/archive/master.zip)
 - Extrair
-- Chrome > Opotions > Extensions ou [clicando aqui](chrome://extensions/)
+- No Chrome: menu Opotions > Extensions ou [clicando aqui](chrome://extensions/)
 - Ativar a opoção `Developer Mode`
 - Na opção `Load unpacked` apontar para a pasta onde a extensão foi extraída
 - Agora a exntensão está ativa
 
-## Opção 2 (extensão empacotada no formato crx)
+## Opção 2 (extensão empacotada no formato crx, mais complexo)
 
-- Download do arquivo `.crx` da extensão **// TODO: path aqui**
-- Chrome > Opotions > Extensions ou [clicando aqui](chrome://extensions/)
+- Download do arquivo `.crx` da extensão [clicando aqui](https://github.com/mhagnumdw/Playback-Rate-Controller/releases/download/1.3.1.1/Playback-Rate-Controller.crx)
+- No Chrome: menu Opotions > Extensions ou [clicando aqui](chrome://extensions/)
 - Arrastar o arquivo da exntensão para cima do Chrome
 - No popup que aparece Clicar em `Add Extension`
 - Extensão adicionada, mas por segurança o Chrome não a ativa
@@ -44,7 +46,21 @@ Agora começa a etapa que varia conforme o Sistema Operacional.
 
 ### Linux
 
-- // TODO: documentar
+// TODO: não testado
+
+- Dentro da pasta `/etc/opt/chrome/policies/managed`
+- Crie ou atualize o arquivo `policies.json` com o conteúdo
+
+    ```json
+    {
+        "ExtensionInstallWhitelist": [
+            "ID-DA-EXTENSAO-AQUI"
+        ]
+    }
+    ```
+
+> **NOTA:** se já existirem políticas, apenas atualize.
+
 - Acesse a políticas do Chrome [aqui](chrome://policy/) e clique em `Reload polices`
 
 ### Mac OS
@@ -54,7 +70,9 @@ Agora começa a etapa que varia conforme o Sistema Operacional.
 
 ### Checando se deu tudo certo
 
-- A extensão deve está ativa
+- Se a extensão estiver ativa tudo ok!
+
+> **NOTA:** se a página web já estiver aberta pode ser necessário um reload.
 
 ### Referências
 
