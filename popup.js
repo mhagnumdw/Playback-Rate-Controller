@@ -57,8 +57,8 @@ function formatRate(rate) {
 function addCallbacks() {
     document.getElementById('prc-slower').addEventListener('click', slower)
     document.getElementById('prc-faster').addEventListener('click', faster)
-    document.getElementById('prc-rate-08').addEventListener('click', () => setPlaybackRate(0.8))
     document.getElementById('prc-rate-1').addEventListener('click', () => setPlaybackRate(1.0))
+    document.getElementById('prc-rate-125').addEventListener('click', () => setPlaybackRate(1.25))
     document.getElementById('prc-rate-15').addEventListener('click', () => setPlaybackRate(1.5))
     document.getElementById('prc-rate-175').addEventListener('click', () => setPlaybackRate(1.75))
     document.getElementById('prc-rate-2').addEventListener('click', () => setPlaybackRate(2.0))
