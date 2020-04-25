@@ -119,6 +119,18 @@
         .prc-controls-slider input {
             width: 100%;
         }
+        .moded-by {
+            font-size: 10px;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .moded-by-link {
+            display: flex;
+            align-items: center;
+        }
+        .moded-by-link > * {
+            padding: 5px;
+        }
     </style>
 
     <script src="popup.js"></script>
@@ -156,10 +168,10 @@
         <div class="prc-extra-controls">
             <div class="prc-extra-controls-slow">
                 <div class="prc-extra-controls-slow-top">
-                    <button id="prc-rate-05" class="prc-control-btn prc-control-rate-btn"> 0.5x </button>
+                    <button id="prc-rate-125" class="prc-control-btn prc-control-rate-btn"> 1.25x </button>
                 </div>
                 <div class="prc-extra-controls-slow-bottom">
-                    <button id="prc-rate-08" class="prc-control-btn prc-control-rate-btn"> 0.8x </button>
+                    <button id="prc-rate-15" class="prc-control-btn prc-control-rate-btn"> 1.5x </button>
                 </div>
             </div>
             <div class="prc-extra-controls-normal">
@@ -167,7 +179,7 @@
             </div>
             <div class="prc-extra-controls-fast">
                 <div class="prc-extra-controls-fast-top">
-                    <button id="prc-rate-15" class="prc-control-btn prc-control-rate-btn"> 1.5x </button>
+                    <button id="prc-rate-175" class="prc-control-btn prc-control-rate-btn"> 1.75x </button>
                 </div>
                 <div class="prc-extra-controls-fast-bottom">
                     <button id="prc-rate-2" class="prc-control-btn prc-control-rate-btn"> 2.0x </button>
@@ -177,6 +189,14 @@
 
         <div class="prc-controls-slider">
             <input id="prc-rate-slider" type="range" min="0.1" max="6" value="1" step=".1">
+        </div>
+
+        <div class="moded-by">
+            <a href="https://github.com/mhagnumdw/Playback-Rate-Controller"
+                target="_blank" class="moded-by-link">
+                <span>moded by MhagnumDw</span>
+                <img src="icon-mhagnumdw.jpg"></img>
+            </a>
         </div>
     </div>
 </body>
