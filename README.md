@@ -19,7 +19,7 @@ Como essa extensão não é publicada na Chrome Web Store, um conjunto de passos
 
 - Download do fonte da extensão [clicando aqui](https://github.com/mhagnumdw/Playback-Rate-Controller/archive/master.zip)
 - Extrair
-- No Chrome: menu Opotions > Extensions ou [clicando aqui](chrome://extensions/)
+- No Chrome: menu `Opotions > Extensions` ou acessando <chrome://extensions/>
 - Ativar a opoção `Developer Mode`
 - Na opção `Load unpacked` apontar para a pasta onde a extensão foi extraída
 - Agora a exntensão está ativa
@@ -27,7 +27,7 @@ Como essa extensão não é publicada na Chrome Web Store, um conjunto de passos
 ## Opção 2 (extensão empacotada no formato crx, mais complexo)
 
 - Download do arquivo `.crx` da extensão [clicando aqui](https://github.com/mhagnumdw/Playback-Rate-Controller/releases/download/1.3.1.1/Playback-Rate-Controller.crx)
-- No Chrome: menu Opotions > Extensions ou [clicando aqui](chrome://extensions/)
+- No Chrome: menu `Opotions > Extensions` ou acessando <chrome://extensions/>
 - Arrastar o arquivo da exntensão para cima do Chrome
 - No popup que aparece Clicar em `Add Extension`
 - Extensão adicionada, mas por segurança o Chrome não a ativa
@@ -42,7 +42,7 @@ Agora começa a etapa que varia conforme o Sistema Operacional.
 - Dentro de `ExtensionInstallWhitelist` > botão direito > Novo > Valor da Cadeia de Caracteres
 - Nomeie como `1`, se ja existir então `2`, e assim por diante
 - Dois cliques sobre o registro criado e no valor colocar o ID da extensão
-- Acesse a políticas do Chrome [aqui](chrome://policy/) e clique em `Reload polices`
+- Acesse a políticas do Chrome em <chrome://policy/> e clique em `Reload polices`
 
 ### Linux
 
@@ -61,12 +61,12 @@ Agora começa a etapa que varia conforme o Sistema Operacional.
 
 > **NOTA:** se já existirem políticas, apenas atualize.
 
-- Acesse a políticas do Chrome [aqui](chrome://policy/) e clique em `Reload polices`
+- Acesse a políticas do Chrome em <chrome://policy/> e clique em `Reload polices`
 
 ### Mac OS
 
 - // TODO: documentar
-- Acesse a políticas do Chrome [aqui](chrome://policy/) e clique em `Reload polices`
+- Acesse a políticas do Chrome em <chrome://policy/> e clique em `Reload polices`
 
 ### Checando se deu tudo certo
 
