@@ -1,6 +1,6 @@
 const MAX_PLAYBACK_RATE = 16.0
 const MIN_PLAYBACK_RATE = 0.1
-const SHOW_DECIMAL_PLACES = 1
+const SHOW_DECIMAL_PLACES = 2
 const CSS_CLASS_HIDDEN = 'hidden'
 
 const PLAYBACK_STEPS = {
@@ -57,10 +57,10 @@ function formatRate(rate) {
 function addCallbacks() {
     document.getElementById('prc-slower').addEventListener('click', slower)
     document.getElementById('prc-faster').addEventListener('click', faster)
-    document.getElementById('prc-rate-05').addEventListener('click', () => setPlaybackRate(0.5))
     document.getElementById('prc-rate-08').addEventListener('click', () => setPlaybackRate(0.8))
     document.getElementById('prc-rate-1').addEventListener('click', () => setPlaybackRate(1.0))
     document.getElementById('prc-rate-15').addEventListener('click', () => setPlaybackRate(1.5))
+    document.getElementById('prc-rate-175').addEventListener('click', () => setPlaybackRate(1.75))
     document.getElementById('prc-rate-2').addEventListener('click', () => setPlaybackRate(2.0))
     document.getElementById('prc-rate-slider').addEventListener('input', e => setPlaybackRate(e.target.value))
 }
@@ -73,8 +73,10 @@ function updatePlaybackRate() {
         }
 
         chrome.tabs.sendMessage(tab.id, options, function(response) {
+            console.log(options);
             if (response.status === 'success') {
                 playbackRate = response.playbackRate
+                console.log('apos sucesso:', playbackRate);
                 renderRate()
                 setSRateSlider()
             }
